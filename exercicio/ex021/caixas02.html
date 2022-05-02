@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping-tags</title>
+    <style>
+        body{
+            background-color: rgba(56, 155, 255, 0.904);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 13px;
+        }
+        header{
+            background-color: bisque;
+            padding: 10px;
+            margin: 5px;
+        }
+        main{
+            background-color: bisque;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px 0px;
+            box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.288);
+        }
+        nav{
+            background-color: rgb(63, 107, 109);
+            padding: 2px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
+        }
+        nav > a{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            margin-right: 35px;
+        }
+        article{
+            background-color: rgba(240, 248, 248, 0.705);
+            padding: 3px;
+        }
+        article > aside{
+            background-color: rgba(193, 202, 202, 0.959);
+            
+        }
+        footer{
+            background-color: rgb(3, 4, 5);
+            color: bisque;
+            text-align: center;
+            padding: 2px;
+            margin: 5px;
+            margin-top: 10px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Guerra úcrania :</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore ipsum quidem praesentium blanditiis minus saepe, hic, nam, minima voluptate numquam laborum labore sequi cumque unde modi! Quis, vel adipisci.</p>
+                <aside>
+                    <p>Artigo escrito por iago de souza pires</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desemvolvido por desconhecido</p>
+    </footer>
+</body>
+</html>
