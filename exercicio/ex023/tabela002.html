@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead > tr, th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(11, 9, 122);
+        }
+        thead,tfoot{
+            background-color: rgb(11, 9, 122);
+            color: rgb(255, 255, 255);
+        }
+        .numero{
+            text-align: right;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgb(31, 99, 201);
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color:rgb(31, 99, 201);
+            border: 1px solid black;
+        }
+        .pos{
+            text-align: center;
+        }
+        div#conteiner{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <div id="conteiner">
+        <table>
+            <caption>Lista de Municípios do brasil</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Pos</th>
+                    <th scope="col">Município</th>
+                    <th scope="col" style="width: 105px;">população</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="pos">1</td>
+                    <td>RIO BRANCO</td>
+                    <td class="numero">413 418</td>
+                </tr>
+                <tr>
+                    <td class="pos">2</td>
+                    <td>MACEIÓ</td>
+                    <td class="numero">1 025 360</td>
+                </tr>
+                <tr>
+                    <td class="pos">3</td>
+                    <td>ARAPIRACA</td>
+                    <td class="numero">233 047</td>
+                </tr>
+                <tr>
+                    <td class="pos">4</td>
+                    <td>MACAPÁ</td>
+                    <td class="numero">512 902</td>
+                </tr>
+                <tr>
+                    <td class="pos">5</td>
+                    <td>SANTANA</td>
+                    <td class="numero">123 096</td>
+                </tr>
+                <tr>
+                    <td class="pos">6</td>
+                    <td>BARREIRAS</td>
+                    <td class="numero">156 975</td>
+                </tr>
+                <tr>
+                    <td class="pos">7</td>
+                    <td>JEQUIÉ</td>
+                    <td class="numero">156 126</td>
+                </tr>
+                <tr>
+                    <td class="pos">8</td>
+                    <td>MANAUS</td>
+                    <td class="numero">2 219 580</td>
+                </tr>
+                <tr>
+                    <td class="pos">9</td>
+                    <td>PARINTINS</td>
+                    <td class="numero">115 363</td>
+                </tr>
+                <tr>
+                    <td class="pos">10</td>
+                    <td>ALAGOINHAS</td>
+                    <td class="numero">152 327</td>
+                </tr>
+                <tr>
+                    <td class="pos">11</td>
+                    <td>ITACOATIARA</td>
+                    <td class="numero">102 701</td>
+                </tr>
+                <tr>
+                    <td class="pos">12</td>
+                    <td>SALVADOR</td>
+                    <td class="numero">2 886 698</td>
+                </tr>
+                <tr>
+                    <td class="pos">13</td>
+                    <td>FEIRA DE SANTANA</td>
+                    <td class="numero">619 609</td>
+                </tr>
+                <tr>
+                    <td class="pos">14</td>
+                    <td>VITÓRIA DA CONQUISTA</td>
+                    <td class="numero">341 128</td>
+                </tr>
+                <tr>
+                    <td class="pos">15</td>
+                    <td>CAMAÇARI</td>
+                    <td class="numero">304 302</td>
+                </tr>
+                <tr>
+                    <td class="pos">16</td>
+                    <td>JUAZEIRO</td>
+                    <td class="numero">218 162</td>
+                </tr>
+                <tr>
+                    <td class="pos">17</td>
+                    <td>ITABUNA</td>
+                    <td class="numero">213 685</td>
+                </tr>
+                <tr>
+                    <td class="pos">18</td>
+                    <td>LAURO DE FREITAS</td>
+                    <td class="numero">201 635</td>
+                </tr>
+                <tr>
+                    <td class="pos">19</td>
+                    <td>TEIXEIRA DE FREITAS</td>
+                    <td class="numero">162 438</td>
+                </tr>
+                <tr>
+                    <td class="pos">20</td>
+                    <td>ILHÉUS</td>
+                    <td class="numero">159 923</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="2">TOTAL DA POPULAÇÃO</th>
+                    <td class="numero">10 318 475</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, deserunt. Vitae, ipsum modi atque, excepturi ipsam distinctio reprehenderit saepe sit earum tempore quidem exercitationem quis quod accusantium consequatur molestias. Omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quidem, quas cum veritatis dolores nostrum velit ad praesentium omnis corrupti commodi nihil blanditiis odit soluta error rem labore voluptate tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorem, itaque fugit animi quam sapiente! Dolores architecto eligendi odit, laudantium consequuntur sequi consectetur voluptate id ratione dolore inventore nemo iure?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, deserunt. Vitae, ipsum modi atque, excepturi ipsam distinctio reprehenderit saepe sit earum tempore quidem exercitationem quis quod accusantium consequatur molestias. Omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quidem, quas cum veritatis dolores nostrum velit ad praesentium omnis corrupti commodi nihil blanditiis odit soluta error rem labore voluptate tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorem, itaque fugit animi quam sapiente! Dolores architecto eligendi odit, laudantium consequuntur sequi consectetur voluptate id ratione dolore inventore nemo iure?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, deserunt. Vitae, ipsum modi atque, excepturi ipsam distinctio reprehenderit saepe sit earum tempore quidem exercitationem quis quod accusantium consequatur molestias. Omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quidem, quas cum veritatis dolores nostrum velit ad praesentium omnis corrupti commodi nihil blanditiis odit soluta error rem labore voluptate tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorem, itaque fugit animi quam sapiente! Dolores architecto eligendi odit, laudantium consequuntur sequi consectetur voluptate id ratione dolore inventore nemo iure?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, deserunt. Vitae, ipsum modi atque, excepturi ipsam distinctio reprehenderit saepe sit earum tempore quidem exercitationem quis quod accusantium consequatur molestias. Omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quidem, quas cum veritatis dolores nostrum velit ad praesentium omnis corrupti commodi nihil blanditiis odit soluta error rem labore voluptate tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorem, itaque fugit animi quam sapiente! Dolores architecto eligendi odit, laudantium consequuntur sequi consectetur voluptate id ratione dolore inventore nemo iure?</p>
+</body>
+</html>
